@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*generales*/
+
+.container{
+    display: flex;
+    justify-content: center;
+    border-spacing: 2em;
+}
+/*movil*/
+/*header*/
+
+.header{
+    background-color: red;
+  display: flex;
+  width: 100vw;
+  height: 2em;
+justify-content: space-evenly;
+}
+.logo{
+    font-family: 'Anton', sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    color: rgb(252, 250, 249);
+    float: left;
+    margin-left: 0.5em;
+}
+
+
+.boton-buscar{
+display: none;
+}
+
+.buscar{
+    height: 2em;
+    border-radius: 25em;
+    border-spacing: 0.5em;
+    border-style: none;
+    margin-top: 0.2em;
+}
+nav.navegador-principal{
+    display: none;
+}
+.sub-menu{
+    margin-right: 0.5em;
+}
+.fas{
+font-size: 0.5em;
+}
+nav.navegador-principal ul{
+    display: block;
+    background-color: violet;
+    padding: 0;
+    width: 100%;
+}
+
+nav.navegador-principal ul li{
+    background-color: turquoise;
+    display: inline;
+    list-style: none;
+    margin-left: 0.5em;
+    font-size: 0.5em;
+}
+/*
+nav.navegador-principal a{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+        color: snow;
+}
+*/
+/*slider*/
+.slider{
+    flex-shrink: 0;
+    width:90%;
+}
+
+.slider img{
+    width: 100%;
+}
+
+.categorias{
+    display: block;
+}
+.card img{
+    width: 80%;
+}

@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e-Commerce</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/main.js"></script>
+  
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
         integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <div class="cabecera"></div>
+    <header class="header">
         <a class="logo" href="#">logo</a>
-        <nav>
+        <nav class="navegador-principal">
             <ul>
                 <select name="" id="">
                     <option value="categorias">Categorías</option>
@@ -31,14 +33,19 @@
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
-        <input type="search"><button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-        <span>Envíos a domicilio</span>
-        <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+        <div class="sub-menu">
+        <input class="buscar" type="search"><button class="boton-buscar" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <a href="#"><i class="fas fa-truck"></i></a>
+        <a href="#"><i class="fas fa-heart" aria-hidden="true"></i></a>
         <a href="#"><i class="fas fa-shopping-cart"></i></a>
-        <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+        <a href="#"><i class="fas fa-user" aria-hidden="true"></i></a>
+    </div>
+</div>
     </header>
-
-    <img src="../img/01.jpg" alt="chica con camisa en un bosque">
+     
+    <div class="slider container">
+    <img src="./img/01.jpg" alt="chica con camisa en un bosque">
+</div>
     <div class="opciones-de-pago">
         <ul>
             <li>Tarjeta de crédito<a href="#">Ver promociones bancarias</a></li>
@@ -50,40 +57,40 @@
     <section class="promo-text">
         <h3>Promociones</h3>
         <div class="promo-cards">
-            <div class="card card-promo"><img src="../img/card-01.jpg" alt="tarjeta de promoción 01"></div>
+            <div class="card card-promo"><img src="./img/card-01.jpg" alt="tarjeta de promoción 01"></div>
         </div>
 
         <div class="promo-cards">
-            <div class="card card-promo"><img src="../img/card-02.jpg" alt="tarjeta de promoción 02"></div>
+            <div class="card card-promo"><img src="./img/card-02.jpg" alt="tarjeta de promoción 02"></div>
         </div>
     </section>
 
-    <section class="categorias">
+    <section class="categorias container">
         <div class="promo-cards">
-            <div class="card card-categoria"><img src="../img/card-categoria-01.jpg" alt="tarjeta de promoción 01">
+            <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 01">
             </div>
         </div>
 
         <div class="promo-cards">
-            <div class="card card-categoria"><img src="../img/card-categoria-02.jpg" alt="tarjeta de promoción 02">
+            <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 02">
             </div>
         </div>
         <div class="promo-cards">
-            <div class="card card-categoria"><img src="../img/card-categoria-03.jpg" alt="tarjeta de promoción 03">
-            </div>
-        </div>
-
-        <div class="promo-cards">
-            <div class="card card-categoria"><img src="../img/card-categoria-04.jpg" alt="tarjeta de promoción 04">
-            </div>
-        </div>
-        <div class="promo-cards">
-            <div class="card card-categoria"><img src="../img/card-categoria-05.jpg" alt="tarjeta de promoción 05">
+            <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 03">
             </div>
         </div>
 
         <div class="promo-cards">
-            <div class="card card-categoria"><img src="../img/card-categoria-06.jpg" alt="tarjeta de promoción 06">
+            <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 04">
+            </div>
+        </div>
+        <div class="promo-cards">
+            <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 05">
+            </div>
+        </div>
+
+        <div class="promo-cards">
+            <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 06">
             </div>
         </div>
     </section>
