@@ -7,32 +7,18 @@
     <title>e-Commerce</title>
   
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
         integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
 </head>
 
 <body>
     <div class="cabecera"></div>
     <header class="header">
         <a class="logo" href="#">logo</a>
-        <nav class="navegador-principal">
-            <ul>
-                <select name="" id="">
-                    <option value="categorias">Categorías</option>
-                    <option value="pantalones">Pantalones</option>
-                    <option value="remeras">Remeras</option>
-                    <option value="camperas">Camperas</option>
-                    <option value="calzados">Calzados</option>
-                    <option value="accesorios">Accesorios</option>
-                </select>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Novedades</a></li>
-                <li><a href="#">Sucursales</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+ 
         <div class="sub-menu">
         <input class="buscar" type="search"><button class="boton-buscar" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
         <a href="#"><i class="fas fa-truck"></i></a>
@@ -40,11 +26,51 @@
         <a href="#"><i class="fas fa-shopping-cart"></i></a>
         <a href="#"><i class="fas fa-user" aria-hidden="true"></i></a>
     </div>
+        <!--Menu hamburguesa-->
+        <div class="burguer-menu">
+            <a href="#" id="menu-on">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        </div>
+    <nav class="navegador-principal">
+        <ul>
+            <select name="" id="">
+                <option value="categorias">Categorías</option>
+                <option value="pantalones">Pantalones</option>
+                <option value="remeras">Remeras</option>
+                <option value="camperas">Camperas</option>
+                <option value="calzados">Calzados</option>
+                <option value="accesorios">Accesorios</option>
+            </select>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="#">Sucursales</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
 </div>
     </header>
      
-    <div class="slider container">
-    <img src="./img/01.jpg" alt="chica con camisa en un bosque">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+          <div class="swiper-slide">Slide 10</div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+<!--<img src="./img/01.jpg" alt="chica con camisa en un bosque">-->
 </div>
     <div class="opciones-de-pago">
         <ul>
@@ -95,7 +121,9 @@
         </div>
     </section>
 
-    
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
 </body>
 
 </html>
