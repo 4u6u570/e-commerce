@@ -32,6 +32,8 @@ a.logo{
   padding-right: 1em;
   height: 2em;
 justify-content: space-between;
+position: fixed;
+z-index: 1;
 }
 
 
@@ -150,18 +152,21 @@ display: none;
     position: absolute;
     top: 50%;
     bottom: 50%;
-    z-index: 10;
+    z-index: 2;
     left: 5%;
     font-size: 30px;
     color: rgb(255, 255, 255);
     opacity: 0.7;
     cursor: pointer;
 }
+.fa-arrow-left{
+    z-index:1000;
+}
 #nextBtn{
     position: absolute;
     top: 50%;
     bottom: 50%;
-    z-index: 10;
+    z-index: 2;
     right: 5%;
     font-size: 30px;
     color: rgb(255, 255, 255);
@@ -201,8 +206,9 @@ display: none;
     margin: 1em;
 margin-left: auto;
 margin-right: auto;
+display: inline-block;
 }
-.promo-cards{
+.promo-cards img{
     width: 80%;
 }
 

@@ -1,7 +1,7 @@
 //variables
 const menuOn= document.getElementById("menu-on");
 
-alert("enjoy!");
+
 
 /*menu*/
 menuOn.addEventListener('click', function(){
