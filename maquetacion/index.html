@@ -1,123 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>e-Commerce</title>
-  
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
-        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>e-Commerce</title>
+
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+            integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+            <link href="https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@300&family=Sriracha&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
-</head>
+    </head>
 
-<body>
-    <div class="cabecera"></div>
-    <header class="header">
-        <a class="logo" href="#">logo</a>
- 
-        <div class="sub-menu">
-        <input class="buscar" type="search"><button class="boton-buscar" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-        <a href="#"><i class="fas fa-truck"></i></a>
-        <a href="#"><i class="fas fa-heart" aria-hidden="true"></i></a>
-        <a href="#"><i class="fas fa-shopping-cart"></i></a>
-        <a href="#"><i class="fas fa-user" aria-hidden="true"></i></a>
+    <body>
+        <div class="cabecera"></div>
+        <header class="header">
+            <a class="logo" href="#">logo</a>
+
+            <div class="sub-menu">
+                <input class="buscar" type="search"><button class="boton-buscar" type="submit"><i class="fa fa-search"
+                        aria-hidden="true"></i></button>
+                <a href="#"><i class="fas fa-truck"></i></a>
+                <a href="#"><i class="fas fa-heart" aria-hidden="true"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="fas fa-user" aria-hidden="true"></i></a>
+            </div>
+            <!--Menu hamburguesa-->
+            <div class="burguer-menu">
+                <a href="#" id="menu-on">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <nav class="navegador-principal">
+                <ul>
+                    <select name="" id="">
+                        <option value="categorias">Categorías</option>
+                        <option value="pantalones">Pantalones</option>
+                        <option value="remeras">Remeras</option>
+                        <option value="camperas">Camperas</option>
+                        <option value="calzados">Calzados</option>
+                        <option value="accesorios">Accesorios</option>
+                    </select>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Novedades</a></li>
+                    <li><a href="#">Sucursales</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
     </div>
-        <!--Menu hamburguesa-->
-        <div class="burguer-menu">
-            <a href="#" id="menu-on">
-            <span></span>
-            <span></span>
-            <span></span>
-        </a>
-        </div>
-    <nav class="navegador-principal">
-        <ul>
-            <select name="" id="">
-                <option value="categorias">Categorías</option>
-                <option value="pantalones">Pantalones</option>
-                <option value="remeras">Remeras</option>
-                <option value="camperas">Camperas</option>
-                <option value="calzados">Calzados</option>
-                <option value="accesorios">Accesorios</option>
-            </select>
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="#">Novedades</a></li>
-            <li><a href="#">Sucursales</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-</div>
-    </header>
-     
-<div class="carousel-contain">
-    <div class="carousel-slide">
-        <img src="./img/carousel04.jpg" id="lastClone" alt="">
-        <img src="./img/carousel01.jpg" alt="">
-        <img src="./img/carousel03.jpg" alt="">
-        <img src="./img/carousel04.jpg" alt="">
-        <img src="./img/carousel01.jpg" id="firstClone" alt="">
-
-    </div>
-</div>
-<button id="prevBtn">Prev</button>
-<button id="nextBtn">Next</button>
-<!--<img src="./img/01.jpg" alt="chica con camisa en un bosque">-->
-</div>
-    <div class="opciones-de-pago">
-        <ul>
-            <li>Tarjeta de crédito<a href="#">Ver promociones bancarias</a></li>
-            <li>Tarjeta de débito<a href="#">Ver más</a></li>
-            <li>Efectivo<a href="#">Ver más</a></li>
-            <li>Más medios de pago<a href="#">Ver todos</a></li>
-        </ul>
-    </div>
-    <section class="promo-text">
-        <h3>Promociones</h3>
-        <div class="promo-cards">
-            <div class="card card-promo"><img src="./img/card-01.jpg" alt="tarjeta de promoción 01"></div>
-        </div>
-
-        <div class="promo-cards">
-            <div class="card card-promo"><img src="./img/card-02.jpg" alt="tarjeta de promoción 02"></div>
-        </div>
-    </section>
-
-    <section class="categorias container">
-        <div class="promo-cards">
-            <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 01">
+        <div class="container carousel">
+            <div class="carousel-container">
+                <i class="fas fa-arrow-left" id="prevBtn"></i>
+                <i class="fas fa-arrow-right" id="nextBtn"></i>
+                <div class="carousel-slide">
+                    <img src="./img/carousel04.jpg" id="lastClone" alt="">
+                    <img src="./img/carousel01.jpg" alt="">
+                    <img src="./img/carousel03.jpg" alt="">
+                    <img src="./img/carousel04.jpg" alt="">
+                    <img src="./img/carousel01.jpg" id="firstClone" alt="">
+                </div>
             </div>
         </div>
 
-        <div class="promo-cards">
-            <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 02">
-            </div>
-        </div>
-        <div class="promo-cards">
-            <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 03">
-            </div>
-        </div>
+        <!--<img src="./img/01.jpg" alt="chica con camisa en un bosque">-->
 
-        <div class="promo-cards">
-            <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 04">
-            </div>
+        <div class="container opciones-de-pago">
+            
+                <div class="mediosDePago opciones-de-pago-desktop"><i class="fas fa-money-check-alt"></i>Tarjeta de crédito<a href="#">Ver promociones bancarias</a></div>
+                <div class="mediosDePago opciones-de-pago-desktop"><i class="fas fa-money-check"></i>Tarjeta de débito<a href="#">Ver más</a></div>
+                <div class="mediosDePago opciones-de-pago-desktop"><i class="fas fa-money-bill-wave"></i>Efectivo<a href="#">Ver más</a></div>
+                <div class="mediosDePago"><i class="fas fa-plus"></i><a href="#"> Ver todas las opciones de pago</a></div>
+            
         </div>
-        <div class="promo-cards">
-            <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 05">
+         
+         <!--promociones-->
+        <section class="promo-text container">
+            <h3 class="titulo-de-seccion">Promociones</h3>
+            <div class="promo-cards">
+                <div class="card card-promo"><img src="./img/card-01.jpg" alt="tarjeta de promoción 01"></div>
             </div>
-        </div>
 
-        <div class="promo-cards">
-            <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 06">
+            <div class="promo-cards">
+                <div class="card card-promo"><img src="./img/card-02.jpg" alt="tarjeta de promoción 02"></div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <script src="./js/main.js"></script>
-   <script src="./js/carousel.js"></script>
-</body>
+        <section class="categorias">
+            <div class="promo-cards">
+                <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 01">
+                </div>
+            </div>
+
+            <div class="promo-cards">
+                <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 02">
+                </div>
+            </div>
+            <div class="promo-cards">
+                <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 03">
+                </div>
+            </div>
+
+            <div class="promo-cards">
+                <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 04">
+                </div>
+            </div>
+            <div class="promo-cards">
+                <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 05">
+                </div>
+            </div>
+
+            <div class="promo-cards">
+                <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 06">
+                </div>
+            </div>
+        </section>
+
+        <script src="./js/main.js"></script>
+        <script src="./js/carousel.js"></script>
+    </body>
 
 </html>

@@ -4,29 +4,34 @@
     box-sizing: border-box;
 }
 /*generales*/
-
+body{
+    background-color: rgb(237, 249, 255);
+}
 .container{
     display: flex;
-    justify-content: center;
     border-spacing: 2em;
+}
+.titulo-de-seccion{
+    text-align: center;
+}
+a.logo{
+    font-family: 'Sriracha', cursive;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: rgb(252, 250, 249);
+    float: left;
 }
 /*movil*/
 /*header*/
 
 .header{
-    background-color: red;
+    background-color: #6870db;
   display: flex;
-  width: 100vw;
+  margin: auto;
+  padding-left: 1em;
+  padding-right: 1em;
   height: 2em;
-justify-content: space-evenly;
-}
-.logo{
-    font-family: 'Anton', sans-serif;
-    font-size: 1em;
-    text-decoration: none;
-    color: rgb(252, 250, 249);
-    float: left;
-    margin-left: 0.5em;
+justify-content: space-between;
 }
 
 
@@ -42,12 +47,17 @@ display: none;
     margin-top: 0.2em;
 }
 
+.sub-menu a i{
+    color: rgb(241, 241, 241);
+}
+
 /*burguer menu*/
 
 .burguer-menu span{
+    margin-top: 0.2em;
     width: 10px;
     height: 5px;
-    color: violet;
+
 }
 #menu-on{
     display: inline-block;
@@ -79,7 +89,7 @@ display: none;
     left: -300px;
     z-index:1;
     padding: 90px 30px 30px;
-    background: #68C5DB;
+    background: #6870db;
     opacity: 0;
     transition: all 0.75s ease;
     font-size: 1.2em;
@@ -122,22 +132,77 @@ display: none;
       transform: translateX(260px);
 }
 /*slider*/
+
 .carousel-container{
-    width: 60%;
+    width: 95%;
     margin: auto;
-    border: 5px solid black;
+    border-bottom: 2px solid rgb(211, 211, 211);
     overflow: hidden;
+    position: relative;
 }
 .carousel-slide{
     display: flex;
     width: 100%;
-    height: 500px;
+    height: 200px;
 }
-/*fin de slider*/
 
-.categorias{
-    display: block;
+#prevBtn{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    cursor: pointer;
 }
-.card img{
+#nextBtn{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/*opciones de pago*/
+.opciones-de-pago{
+    overflow: hidden;
+    text-align: center;
+    margin-top: 1em;
+    border-radius: 1.5em;
+}
+.mediosDePago{
+    width: 95%;
+    height: 6em;
+    background-color: rgb(255, 255, 255);
+    border-left: 1px solid rgb(211, 211, 211);
+    border-bottom: 1px solid rgb(211, 211, 211);
+    font-size: 1em; 
+    padding: 1.5em;
+}
+.mediosDePago a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: rgb(22, 22, 22);
+}
+
+
+.opciones-de-pago-desktop{
+    display: none;
+}
+/*categorias*/
+.promo-text{
+    background-color: rgb(255, 255, 255);
+    margin: 1em;
+margin-left: auto;
+margin-right: auto;
+}
+.promo-cards{
     width: 80%;
 }
+
