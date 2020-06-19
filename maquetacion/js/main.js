@@ -8,6 +8,8 @@ menuOn.addEventListener('click', function(){
 document.body.classList.toggle('visible_menu')
 });
 
-//comentario prueba
-
+var flicking = new eg.Flicking("#wrapper", {
+    gap: 10,
+    circular: true,
+  });
 
