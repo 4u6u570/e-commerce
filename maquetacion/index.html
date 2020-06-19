@@ -12,6 +12,11 @@
             <link href="https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@300&family=Sriracha&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="../package/css/swiper.min.css">
+
+
     </head>
 
     <body>
@@ -127,10 +132,84 @@
             </div>
         </section>
 -->
+
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper"></div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <p class="append-buttons">
+    <a href="#" class="prepend-2-slides">Prepend 2 Slides</a>
+    <a href="#" class="slide-1">Slide 1</a>
+    <a href="#" class="slide-250">Slide 250</a>
+    <a href="#" class="slide-500">Slide 500</a>
+    <a href="#" class="append-slide">Append Slide</a>
+  </p>
+
+
         <script src="./js/main.js"></script>
         <script src="./js/carousel.js"></script>
         <script src="https://naver.github.io/egjs-flicking/release/latest/dist/flicking.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/egjs-flicking/3.x.x/flicking.js"></script>
+          
+        
+        <!-- Swiper JS -->
+  <script src="../maquetacion/js/swiper-4.5.3/dist/js/swiper.min.js"></script>
+
+        <!-- Initialize Swiper -->
+  <script>
+    var appendNumber = 6;
+    var prependNumber = 1;
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      virtual: {
+        slides: (function () {
+          var slides = [];
+          for (var i = 0; i < 600; i += 1) {
+            slides.push('Slide ' + (i + 1));
+          }
+          return slides;
+        }()),
+      },
+    });
+    document.querySelector('.slide-1').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.slideTo(0, 0);
+    });
+    document.querySelector('.slide-250').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.slideTo(249, 0);
+    });
+    document.querySelector('.slide-500').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.slideTo(499, 0);
+    });
+    document.querySelector('.prepend-2-slides').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.virtual.prependSlide([
+        'Slide ' + (--prependNumber),
+        'Slide ' + (--prependNumber)
+      ]);
+    });
+    document.querySelector('.append-slide').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.virtual.appendSlide('Slide ' + (++appendNumber));
+    });
+  </script>
 
     </body>
 
