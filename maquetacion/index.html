@@ -1,148 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>e-Commerce</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Commerce</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
-            integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-            <link href="https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@300&family=Sriracha&display=swap" rel="stylesheet">
+  </head>
 
-    </head>
+  <body>
+    <footer>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Logo</a>
 
-    <body>
-
-        <header class="header">
-            <a class="logo" href="#">logo</a>
-
-            <div class="sub-menu">
-                <input class="buscar" type="search"><button class="boton-buscar" type="submit"><i class="fa fa-search"
-                        aria-hidden="true"></i></button>
-               
-                <a href="#"><i class="fas fa-heart" aria-hidden="true"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                <a href="#"><i class="fas fa-user" aria-hidden="true"></i></a>
-            </div>
-            <!--Menu hamburguesa-->
-            <div class="burguer-menu">
-                <a href="#" id="menu-on">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
-            </div>
-            <nav class="navegador-principal">
-                <ul>
-                    <select name="" id="">
-                        <option value="categorias">Categorías</option>
-                        <option value="pantalones">Pantalones</option>
-                        <option value="remeras">Remeras</option>
-                        <option value="camperas">Camperas</option>
-                        <option value="calzados">Calzados</option>
-                        <option value="accesorios">Accesorios</option>
-                    </select>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Novedades</a></li>
-                    <li><a href="#">Sucursales</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-            </div>
-        </header>
-    </div>
-        <div class="container carousel">
-            <div class="carousel-container">
-                <i class="fas fa-arrow-left" id="prevBtn"></i>
-                <i class="fas fa-arrow-right" id="nextBtn"></i>
-                <div class="carousel-slide">
-                    <img src="./img/carousel04.jpg" id="lastClone" alt="">
-                    <img src="./img/carousel01.jpg" alt="">
-                    <img src="./img/carousel03.jpg" alt="">
-                    <img src="./img/carousel04.jpg" alt="">
-                    <img src="./img/carousel01.jpg" id="firstClone" alt="">
-                </div>
-            </div>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Mis compras</a></li>
+            <li><a href="#">Carrito</a></li>
+          </ul>
         </div>
+      </nav>
+    </footer>
 
-        <!--<img src="./img/01.jpg" alt="chica con camisa en un bosque">-->
+    <!--Main-->
+    <main>
 
-        <div class="container opciones-de-pago">
-            
-                <div class="mediosDePago opciones-de-pago-desktop"><i class="fas fa-money-check-alt"></i>Tarjeta de crédito<a href="#">Ver promociones bancarias</a></div>
-                <div class="mediosDePago opciones-de-pago-desktop"><i class="fas fa-money-check"></i>Tarjeta de débito<a href="#">Ver más</a></div>
-                <div class="mediosDePago opciones-de-pago-desktop"><i class="fas fa-money-bill-wave"></i>Efectivo<a href="#">Ver más</a></div>
-                <div class="mediosDePago"><i class="fas fa-plus"></i><a href="#"> Ver todas las opciones de pago</a></div>   
+
+      <h2 class="center-align">Control</h2>
+      <!--slider-->
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>Centro de compras!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>Beneficios de descuentos</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>En todos los comercios</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <!--Beneficios-->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card darken-1">
+              <div class="card-content">
+                <span class="card-title">Envios a todo el pais</span>
+                <i class="large material-icons">
+                  local_grocery_store
+                </i>
+                <p>Envios a domicilio a todo el pais</p>
+              </div>
+              <div class="card-action">
+                <a href="#">Calcular costo de envio</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card darken-1">
+              <div class="card-content">
+                <span class="card-title">Todas las tarjetas</span>
+                <i class="large material-icons">
+                  local_grocery_store
+                </i>
+                <p>Pagá con tarjeta o en efectivo</p>
+              </div>
+              <div class="card-action">
+                <a href="#">Ver promociones vigentes</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card darken-1">
+              <div class="card-content">
+                <span class="card-title">Seguridad, de principio a fin</span>
+                <i class="large material-icons">
+                  local_grocery_store
+                </i>
+                <p>Certificación SSL 100% seguro</p>
+              </div>
+              <div class="card-action">
+                <a href="#">Como te protegemos</a>
+              </div>
+            </div>
+          </div>
+
         </div>
-         
-         <!--promociones-->
-        <section class="promo-text">
-            <h3 class="titulo-de-seccion">Promociones</h3>
-            <div class="container">
-            <div class="promo-cards">
-                <div class="card card-promo"><img src="./img/card-01.jpg" alt="tarjeta de promoción 01"></div>
-            </div>
+        <!--Tarjetas-->
+        <div class="row">
+          <div class="col s6">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/card-01.jpg">
+                <span class="card-title">Temporada invierno</span>
+              </div>
 
-            <div class="promo-cards">
-                <div class="card card-promo"><img src="./img/card-02.jpg" alt="tarjeta de promoción 02"></div>
+              <div class="card-action center-align">
+                <a href="#">ver</a>
+              </div>
             </div>
+          </div>
+          <div class="col s6">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/card-01.jpg">
+                <span class="card-title">Temporada Verano</span>
+              </div>
+              <div class="card-action center-align">
+                <a href="#">ver</a>
+              </div>
+            </div>
+          </div>
         </div>
-        </section>
-        <section class="promo-text">
-            <h3 class="titulo-de-seccion">Productos destacados</h3>
-            <div class="container product01">
-            <div class="promo-cards">
-                <div class="card card-product"><img src="./img/card-01.jpg" alt="tarjeta de promoción 01"></div>
+        <div class="row">
+          <div class="col s6">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/card-01.jpg">
+                <span class="card-title">Temporada Otoño</span>
+              </div>
+
+              <div class="card-action center-align">
+                <a href="#">ver</a>
+              </div>
             </div>
-            <div class="promo-cards">
-                <div class="card card-product"><img src="./img/card-02.jpg" alt="tarjeta de promoción 02"></div>
+          </div>
+          <div class="col s6">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/card-01.jpg">
+                <span class="card-title">Temporada Primavera</span>
+              </div>
+              <div class="card-action">
+                <a href="#">Ver</a>
+              </div>
             </div>
-            <div class="promo-cards">
-                <div class="card card-product"><img src="./img/card-01.jpg" alt="tarjeta de promoción 01"></div>
-            </div>
-            <div class="promo-cards">
-                <div class="card card-product"><img src="./img/card-02.jpg" alt="tarjeta de promoción 02"></div>
-            </div>
+          </div>
         </div>
-        </section>
-  
-<!--
-        <section class="categorias">
-            <div class="promo-cards">
-                <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 01">
-                </div>
-            </div>
+      </div>
 
-            <div class="promo-cards">
-                <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 02">
-                </div>
-            </div>
-            <div class="promo-cards">
-                <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 03">
-                </div>
-            </div>
+    </main>
 
-            <div class="promo-cards">
-                <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 04">
-                </div>
-            </div>
-            <div class="promo-cards">
-                <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 05">
-                </div>
-            </div>
+    <footer class="page-footer">
 
-            <div class="promo-cards">
-                <div class="card card-categoria"><img src="./img/card-02.jpg" alt="tarjeta de promoción 06">
-                </div>
-            </div>
-        </section>
--->
-        <script src="./js/main.js"></script>
-        <script src="./js/carousel.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/egjs-flicking/3.x.x/flicking.js"></script>
-
-    </body>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2020 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">Logo</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
 
 </html>

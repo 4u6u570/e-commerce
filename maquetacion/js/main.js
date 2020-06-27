@@ -1,18 +1,7 @@
-//variables
-const menuOn= document.getElementById("menu-on");
-
-
-
-/*menu*/
-menuOn.addEventListener('click', function(){
-document.body.classList.toggle('visible_menu')
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.slider');
+  var instances = M.Slider.init(elems,{
+    indicators:false
+  });
 });
-
-var flicking = new eg.Flicking(".flicking", {
-    circular: true,
-    renderOnlyVisible: true,
-    gap: 10,
-});
-
-flicking.addPlugins(new eg.Flicking.plugins.Fade());
-
+  
